@@ -1,16 +1,18 @@
-# 📦 ERP Angular + .NET
+# ERP Angular + .NET
 
-Este projeto é um **ERP (Enterprise Resource Planning)** desenvolvido com **Angular 17** no frontend e **ASP.NET Core (C#)** no backend. O objetivo é demonstrar minhas habilidades em desenvolvimento full stack, arquitetura de software e boas práticas de engenharia de sistemas empresariais.
+Este projeto é um sistema ERP (Enterprise Resource Planning) desenvolvido com **Angular 17** no frontend e **ASP.NET Core** no backend.
 
-## 🔧 Tecnologias Utilizadas
-- **Frontend:** Angular 17, RxJS, Angular Material
-- **Backend:** ASP.NET Core Web API, Entity Framework Core
-- **Banco de dados:** SQL Server (com suporte a migrations)
-- **Autenticação:** JWT (JSON Web Token)
-- **Arquitetura:** Clean Architecture (Domínio, Aplicação, Infraestrutura)
-- **Extras:** Swagger, AutoMapper, CORS, Dependency Injection
+## Tecnologias
 
-## 📁 Funcionalidades (em desenvolvimento)
+- Angular 17
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- JWT para autenticação
+- Clean Architecture
+
+## Funcionalidades
+
 - Autenticação e autorização
 - Cadastro de usuários e permissões
 - Módulo de clientes
@@ -19,8 +21,10 @@ Este projeto é um **ERP (Enterprise Resource Planning)** desenvolvido com **Ang
 - Módulo financeiro (contas a pagar/receber)
 - Dashboard com gráficos
 
-## 🚀 Objetivo
-Criar um sistema ERP completo e responsivo, com código limpo e escalável, para fins de portfólio e demonstração profissional.
+## Como executar
 
-## 📝 Licença
-Este projeto é de código aberto e está disponível sob a licença MIT.
+Em breve serão adicionadas instruções completas para executar o projeto localmente com Angular e .NET.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
