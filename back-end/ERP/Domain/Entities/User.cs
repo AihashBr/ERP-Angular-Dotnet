@@ -3,33 +3,35 @@
 namespace Domain.Entities;
 
 /// <summary>
-/// Represents a system user.
+/// Representa um usuário do sistema.
 /// </summary>
 public class User : Entity
 {
     /// <summary>
-    /// Full name of the user.
+    /// Nome completo do usuário.
     /// </summary>
+    [MaxLength(200)]
     public required string Name { get; set; }
 
     /// <summary>
-    /// User's email (optional).
+    /// Email do usuário (opcional).
     /// </summary>
+    [MaxLength(200)]
     [EmailAddress]
     public string? Email { get; set; }
 
     /// <summary>
-    /// User's password (hashed).
+    /// Senha do usuário (hash).
     /// </summary>
     public string? Password { get; set; }
 
     /// <summary>
-    /// Indicates if the user is active.
+    /// Indica se o usuário está ativo.
     /// </summary>
     public bool Active { get; set; }
 
     /// <summary>
-    /// IDs of the companies the user belongs to.
+    /// IDs das empresas às quais o usuário pertence.
     /// </summary>
     public required List<int> CompanyId { get; set; }
 }

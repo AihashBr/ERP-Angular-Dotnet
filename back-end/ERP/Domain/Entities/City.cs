@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Domain.Entities;
 
 /// <summary>
 /// Representa uma cidade no sistema / Represents a city in the system.
@@ -6,12 +8,14 @@
 public class City : Entity
 {
     /// <summary>
-    /// Name of the city
+    /// Nome da cidade / Name of the city
     /// </summary>
+    [MaxLength(200)]
     public required string Name { get; set; }
 
     /// <summary>
-    /// State or province
+    /// Estado ou província / State or province
     /// </summary>
+    [MaxLength(200)]
     public required string State { get; set; }
 }

@@ -3,33 +3,35 @@
 namespace Domain.Entities;
 
 /// <summary>
-/// Base entity class for all domain entities.
+/// Classe base para todas as entidades de domínio.
 /// </summary>
 public abstract class Entity
 {
     /// <summary>
-    /// Primary key identifier.
+    /// Identificador da chave primária.
     /// </summary>
     [Key]
     public int Id { get; set; }
 
     /// <summary>
-    /// Date and time when the record was created.
+    /// Data e hora em que o registro foi criado.
     /// </summary>
     public required DateTime CreatedAt { get; set; }
 
     /// <summary>
-    /// User who created the record.
+    /// Usuário que criou o registro.
     /// </summary>
+    [MaxLength(200)]
     public required string CreatedBy { get; set; }
 
     /// <summary>
-    /// Date and time when the record was last updated.
+    /// Data e hora em que o registro foi atualizado pela última vez.
     /// </summary>
     public DateTime? UpdatedAt { get; set; }
 
     /// <summary>
-    /// User who last updated the record.
+    /// Usuário que atualizou o registro pela última vez.
     /// </summary>
+    [MaxLength(200)]
     public string? UpdatedBy { get; set; }
 }

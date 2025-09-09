@@ -3,27 +3,30 @@
 namespace Domain.Entities;
 
 /// <summary>
-/// Represents an address in the system.
+/// Representa um endereço no sistema
 /// </summary>
 public class Address : Entity
 {
     /// <summary>
-    /// Name or label of the address (e.g., Home, Office)
+    /// Nome ou rótulo do endereço (ex.: Casa, Trabalho)
     /// </summary>
+    [MaxLength(200)]
     public required string Name { get; set; }
 
     /// <summary>
-    /// Street information
+    /// Rua
     /// </summary>
+    [MaxLength(200)]
     public string? Street { get; set; }
 
     /// <summary>
-    /// Number
+    /// Número
     /// </summary>
+    [MaxLength(100)]
     public string? Number { get; set; }
 
     /// <summary>
-    /// City
+    /// Cidade
     /// </summary>
     public int? CityId { get; set; }
     public City? City { get; set; }

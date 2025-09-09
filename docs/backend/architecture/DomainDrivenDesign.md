@@ -1,10 +1,10 @@
-# Backend Structure - ERP
+# Estrutura do Backend - ERP
 
-This document describes the folder structure, the projects created in each one of them, the purpose of each project, and the references between them for the ERP backend.
+Este documento descreve a estrutura de pastas, os projetos criados em cada uma delas, a finalidade de cada projeto e as referências entre eles para o backend do ERP.
 
 ---
 
-## Folder Structure
+## Estrutura de Pastas
 
 src/  
 ├── Api/  
@@ -14,47 +14,47 @@ src/
 
 ---
 
-### Project Details
+### Detalhes dos Projetos
 
 - **Api**  
-  Project type: **ASP.NET Core Web API**.  
-  Responsible for exposing HTTP endpoints, handling authentication, configuring services, middlewares, and frontend integration.
+  Tipo do projeto: **ASP.NET Core Web API**.  
+  Responsável por expor os endpoints HTTP, lidar com autenticação, configurar serviços, middlewares e integração com o frontend.
 
 - **Application**  
-  Project type: **Class Library (.NET)**.  
-  Contains application logic, use cases, services, interfaces, and DTOs.  
-  Acts as an intermediate layer between the domain and infrastructure.
+  Tipo do projeto: **Class Library (.NET)**.  
+  Contém a lógica da aplicação, casos de uso, serviços, interfaces e DTOs.  
+  Atua como camada intermediária entre o domínio e a infraestrutura.
 
 - **Domain**  
-  Project type: **Class Library (.NET)**.  
-  Contains business entities, value objects, enums, and pure business rules.  
-  This layer does not depend on any other.
+  Tipo do projeto: **Class Library (.NET)**.  
+  Contém as entidades de negócio, objetos de valor, enums e regras de negócio puras.  
+  Esta camada não depende de nenhuma outra.
 
 - **Infrastructure**  
-  Project type: **Class Library (.NET)**.  
-  Contains the concrete implementation of data access (e.g., Entity Framework Core), external services, repositories, and other technical details.
+  Tipo do projeto: **Class Library (.NET)**.  
+  Contém a implementação concreta de acesso a dados (ex.: Entity Framework Core), serviços externos, repositórios e outros detalhes técnicos.
 
 ---
 
-## Project References
+## Referências entre Projetos
 
-To maintain separation of concerns and dependencies, project references are configured as follows:
+Para manter a separação de responsabilidades e dependências, as referências entre projetos são configuradas da seguinte forma:
 
-| Referencing Project | Referenced Projects                           | Purpose                                                                                  |
-|---------------------|-----------------------------------------------|------------------------------------------------------------------------------------------|
-| **Application**     | Domain                                        | To use entities, models, and business rules defined in the Domain layer                  |
-| **Infrastructure**  | Application, Domain                           | To implement the contracts defined in Application and access entities from Domain         |
-| **Api**             | Application, Infrastructure, Domain           | To expose the application, use the logic from Application, and the implementation from Infrastructure |
-
----
-
-## Why this organization?
-
-- Facilitates system maintenance and scalability.  
-- Enables isolated testing in each layer.  
-- Follows the **Clean Architecture** pattern, widely used in professional projects.  
-- Clearly separates business rules from technical infrastructure.  
+| Projeto que referencia | Projetos referenciados                      | Finalidade                                                                                  |
+|-------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Application**         | Domain                                      | Utilizar entidades, modelos e regras de negócio definidas na camada Domain                   |
+| **Infrastructure**      | Application, Domain                         | Implementar os contratos definidos em Application e acessar entidades do Domain              |
+| **Api**                 | Application, Infrastructure, Domain         | Expor a aplicação, usar a lógica da Application e a implementação da Infrastructure          |
 
 ---
 
-For more details, check the dedicated documentation for each layer in the `docs/` folder.  
+## Por que essa organização?
+
+- Facilita a manutenção e a escalabilidade do sistema.  
+- Permite testes isolados em cada camada.  
+- Segue o padrão **Clean Architecture**, amplamente utilizado em projetos profissionais.  
+- Separa claramente as regras de negócio da infraestrutura técnica.  
+
+---
+
+Para mais detalhes, consulte a documentação dedicada de cada camada na pasta `docs/`.
