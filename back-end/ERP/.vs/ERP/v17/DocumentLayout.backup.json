@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC6ADCF-6228-49AC-8575-9C94C650D9C3}|Domain\\Domain.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\domain\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC6ADCF-6228-49AC-8575-9C94C650D9C3}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\service\\authservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\service\\authservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\dtos\\auth\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\dtos\\auth\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\dtos\\result\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\dtos\\result\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\service\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\service\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,28 +38,81 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Company.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Domain\\Entities\\Company.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Company.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Domain\\Entities\\Company.cs",
-              "RelativeToolTip": "Domain\\Entities\\Company.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T22:29:47.959Z",
+              "DocumentIndex": 5,
+              "Title": "Infrastructure",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-11T00:04:21.461Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T22:28:27.686Z",
+              "WhenOpened": "2025-09-11T00:43:18.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Auth\\LoginResponseDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Auth\\LoginResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Auth\\LoginResponseDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\Auth\\LoginResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T00:28:48.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResultDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Result\\ResultDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Result\\ResultDTO.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Result\\ResultDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\Result\\ResultDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T00:27:49.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Service\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Service\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Application\\Service\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:40:06.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService .cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Service\\AuthService .cs",
+              "RelativeDocumentMoniker": "Application\\Service\\AuthService .cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Service\\AuthService .cs",
+              "RelativeToolTip": "Application\\Service\\AuthService .cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:38:03.723Z",
               "EditorCaption": ""
             }
           ]

@@ -128,6 +128,9 @@
             "projectReferences": {
               "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -260,9 +263,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Application.csproj"
-              },
               "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Domain\\Domain.csproj"
               }
@@ -285,6 +285,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
