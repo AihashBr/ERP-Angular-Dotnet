@@ -8,6 +8,12 @@ namespace Domain.Entities;
 public class User : Entity
 {
     /// <summary>
+    /// Usuario do sistema
+    /// </summary>
+    [MaxLength(200)]
+    public required string UserName { get; set; }
+
+    /// <summary>
     /// Nome completo do usuário.
     /// </summary>
     [MaxLength(200)]

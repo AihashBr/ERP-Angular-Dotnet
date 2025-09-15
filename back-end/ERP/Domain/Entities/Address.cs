@@ -26,8 +26,11 @@ public class Address : Entity
     public string? Number { get; set; }
 
     /// <summary>
-    /// Cidade
+    /// Cidade Id
     /// </summary>
     public int? CityId { get; set; }
+    /// <summary>
+    /// Cidade Entidade
+    /// </summary>
     public City? City { get; set; }
 }

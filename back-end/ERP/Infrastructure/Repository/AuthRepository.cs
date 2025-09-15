@@ -15,10 +15,10 @@ public class AuthRepository : IAuthRepository
         _context = context;
     }
 
-    // Autentica um usuário verificando se o nome e a senha correspondem a um usuário ativo no sistema.
-    public async Task<User?> AuthenticateUserAsync(string name, string password)
+    // Autentica um usuário verificando se o user name e a senha correspondem a um usuário ativo no sistema.
+    public async Task<User?> AuthenticateUserAsync(string userName, string password)
     {
-        var user = await _context.Users.FirstOrDefaultAsync(u => u.Name == name);
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == userName);
 
         if (user == null || !user.Active || !BCrypt.Net.BCrypt.Verify(password, user.Password))
             return null;

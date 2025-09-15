@@ -1,10 +1,13 @@
+using Application.Mappings;
+using Application.Service;
+using Application.Service.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Repository;
 using Infrastructure.Repository.Interfaces;
-using Application.Service;
-using Application.Service.Interfaces;
 using Infrastructure.Seeds;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,10 +20,17 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Registra as Services na injeção de dependência
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Registra os repositórios na injeção de dependência
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// AutoMapper
+builder.Services.AddAutoMapper(map =>
+{
+    map.AddProfile<UserMap>();
+}, AppDomain.CurrentDomain.GetAssemblies());
 
 // Add controllers
 builder.Services.AddControllers();
@@ -29,6 +39,33 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseExceptionHandler(appError =>
+{
+    appError.Run(async context =>
+    {
+        context.Response.ContentType = "application/json";
+        var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
+        if (contextFeature != null)
+        {
+            context.Response.StatusCode = contextFeature.Error switch
+            {
+                KeyNotFoundException => StatusCodes.Status404NotFound,
+                _ => StatusCodes.Status500InternalServerError
+            };
+
+            var response = new
+            {
+                StatusCode = context.Response.StatusCode,
+                Success = false,
+                Message = contextFeature.Error?.Message ?? "Ocorreu um erro."
+            };
+
+            var json = JsonSerializer.Serialize(response);
+            await context.Response.WriteAsync(json);
+        }
+    });
+});
 
 using (var scope = app.Services.CreateScope())
 {

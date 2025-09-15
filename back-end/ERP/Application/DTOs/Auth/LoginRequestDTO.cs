@@ -8,10 +8,10 @@ public class LoginRequestDTO
     /// <summary>
     /// Nome do usuário.
     /// </summary>
-    public string Name { get; set; } = null!;
+    public required string UserName { get; set; }
 
     /// <summary>
     /// Senha do usuário.
     /// </summary>
-    public string Password { get; set; } = null!;
+    public required string Password { get; set; }
 }

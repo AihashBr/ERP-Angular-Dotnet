@@ -11,9 +11,9 @@ public interface IAuthService
     /// <summary>
     /// Realiza o login do usuário, gerando um token JWT se a autenticação for bem-sucedida.
     /// </summary>
-    /// <param name="loginRequest">Objeto contendo os dados de login (nome e senha).</param>
+    /// <param name="loginRequest">Objeto contendo os dados de login (user name e senha).</param>
     /// <returns>
-    /// Retorna um <see cref="ResultDTO{LoginResponseDTO}"/> que contém os status e Token JWT se estiver tudo certo.
+    /// Retorna um <see cref="Result{LoginResponseDTO}"/> que contém os status e Token JWT se estiver tudo certo.
     /// </returns>
-    Task<ResultDTO<LoginResponseDTO>> LoginAsync(LoginRequestDTO loginRequest);
+    Task<Result<LoginResponseDTO>> LoginAsync(LoginRequestDTO loginRequest);
 }

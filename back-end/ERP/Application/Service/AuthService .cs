@@ -22,11 +22,10 @@ public class AuthService : IAuthService
         _authRepository = authRepository;
     }
 
-    // Realiza o login do usuário, gerando um token JWT se a autenticação for bem-sucedida.
-    public async Task<ResultDTO<LoginResponseDTO>> LoginAsync(LoginRequestDTO loginRequest)
+    public async Task<Result<LoginResponseDTO>> LoginAsync(LoginRequestDTO loginRequest)
     {
-        var user = await _authRepository.AuthenticateUserAsync(loginRequest.Name, loginRequest.Password);
-        if (user == null) return new ResultDTO<LoginResponseDTO> { Success = false, Message = "Usuário ou senha inválidos." };
+        var user = await _authRepository.AuthenticateUserAsync(loginRequest.UserName, loginRequest.Password);
+        if (user == null) return new Result<LoginResponseDTO> { Success = false, Message = "Usuário ou senha inválidos." };
 
         var jwtKey = _configuration["Jwt:Key"];
         if (string.IsNullOrEmpty(jwtKey)) throw new InvalidOperationException("Erro interno LOG-001.");
@@ -50,14 +49,14 @@ public class AuthService : IAuthService
         var token = tokenHandler.CreateToken(tokenDescriptor);
         var tokenString = tokenHandler.WriteToken(token);
 
-        return new ResultDTO<LoginResponseDTO>
+        return new Result<LoginResponseDTO>
         {
             Success = true,
             Message = "Login realizado com sucesso.",
             Data = new LoginResponseDTO
             {
                 Token = tokenHandler.WriteToken(token),
-                Name = user.Name,
+                User = user,
                 Active = user.Active
             }
         };

@@ -1,4 +1,6 @@
-﻿namespace Application.DTOs.Auth;
+﻿using Domain.Entities;
+
+namespace Application.DTOs.Auth;
 
 /// <summary>
 /// Representa a resposta retornada após login bem-sucedido.
@@ -8,12 +10,12 @@ public class LoginResponseDTO
     /// <summary>
     /// Token JWT gerado para o usuário.
     /// </summary>
-    public string Token { get; set; } = null!;
+    public required string Token { get; set; }
 
     /// <summary>
     /// Nome do usuário autenticado.
     /// </summary>
-    public string Name { get; set; } = null!;
+    public required User User { get; set; }
 
     /// <summary>
     /// Indica se o usuário está ativo.

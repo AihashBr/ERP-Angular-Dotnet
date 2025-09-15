@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application.DTOs.Result;
+﻿namespace Application.DTOs.Result;
 
 
 /// <summary>
 /// Representa o resultado de uma operação genérica.
 /// </summary>
 /// <typeparam name="T">Tipo de dado retornado pela operação.</typeparam>
-public class ResultDTO<T>
+public class Result<T>
 {
     /// <summary>
     /// Indica se a operação foi bem-sucedida.
@@ -21,7 +15,7 @@ public class ResultDTO<T>
     /// <summary>
     /// Mensagem adicional sobre o resultado da operação.
     /// </summary>
-    public string Message { get; set; } = string.Empty;
+    public string? Message { get; set; }
 
     /// <summary>
     /// Dados retornados pela operação, se houver.

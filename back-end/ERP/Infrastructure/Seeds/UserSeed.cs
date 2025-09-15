@@ -1,6 +1,5 @@
 ﻿using Domain.Entities;
 using Infrastructure.Data;
-using BCrypt.Net;
 
 namespace Infrastructure.Seeds
 {
@@ -24,6 +23,7 @@ namespace Infrastructure.Seeds
 
             var adminUser = new User
             {
+                UserName = "adm",
                 Name = "Admin",
                 Email = "admin@erp.com",
                 Password = passwordHash,
