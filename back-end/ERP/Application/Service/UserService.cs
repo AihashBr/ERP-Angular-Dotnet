@@ -4,6 +4,7 @@ using Application.Service.Interfaces;
 using AutoMapper;
 using Domain.Entities;
 using Infrastructure.Repository.Interfaces;
+using Kernel.Utils.Pagination;
 
 namespace Application.Service;
 
@@ -11,11 +12,13 @@ public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
     private readonly IMapper _mapper;
+    private readonly IPaginationRepository<User> _paginationRepository;
 
-    public UserService(IUserRepository userRepository, IMapper mapper)
+    public UserService(IUserRepository userRepository, IMapper mapper, IPaginationRepository<User> paginationRepository)
     {
         _userRepository = userRepository;
         _mapper = mapper;
+        _paginationRepository = paginationRepository;
     }
 
 
@@ -61,15 +64,26 @@ public class UserService : IUserService
         };
     }
 
-    public async Task<Result<List<UserViewDTO>>> GetAsync()
+    public async Task<Result<PagedResult<UserViewDTO>>> GetAsync(PaginationParams pagination)
     {
-        var users = await _userRepository.GetAsync();
+        var (users, totalItems) = await _paginationRepository.GetPagedAsync(
+            pagination.PageNumber,
+            pagination.PageSize,
+            orderBy: user => user.OrderBy(u => u.Id));
 
-        return new Result<List<UserViewDTO>>
+
+        var pagedResult = new PagedResult<UserViewDTO>
         {
+            Items = _mapper.Map<List<UserViewDTO>>(users),
+            TotalItems = totalItems,
+            PageNumber = pagination.PageNumber,
+            PageSize = pagination.PageSize
+        };
+
+        return new Result<PagedResult<UserViewDTO>> {
             Success = true,
-            Message = "Usuários buscados com sucesso.",
-            Data = _mapper.Map<List<UserViewDTO>>(users)
+            Message = "Usuário atualizado com sucesso.",
+            Data = pagedResult
         };
     }
 

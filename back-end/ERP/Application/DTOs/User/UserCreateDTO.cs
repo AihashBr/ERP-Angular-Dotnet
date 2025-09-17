@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Application.DTOs.UserDTO;
 
+/// <summary>
+/// Usado para criação e edição do usuário
+/// </summary>
 public class UserCreateDTO : Entity
 {
     /// <summary>

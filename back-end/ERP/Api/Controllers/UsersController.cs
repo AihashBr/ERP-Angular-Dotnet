@@ -1,6 +1,8 @@
-﻿using Application.DTOs.UserDTO;
+﻿using Application.DTOs.Result;
+using Application.DTOs.UserDTO;
 using Application.Service.Interfaces;
 using Domain.Entities;
+using Kernel.Utils.Pagination;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
@@ -19,12 +21,12 @@ public class UsersController : ControllerBase
 
     // Retorna todos os usuários.
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<User>>> Get()
+    public async Task<ActionResult<Result<PagedResult<UserViewDTO>>>> Get([FromQuery] PaginationParams pagination)
     {
-        return Ok(await _userService.GetAsync());
+        return Ok(await _userService.GetAsync(pagination));
     }
 
-    // Retorna um usuário pelo ID.
+    // Obtém uma lista paginada de usuários cadastrados.
     [HttpGet("{id}")]
     public async Task<ActionResult<User>> GetById(int id)
     {

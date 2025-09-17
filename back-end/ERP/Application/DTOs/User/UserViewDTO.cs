@@ -2,6 +2,9 @@
 
 namespace Application.DTOs.UserDTO;
 
+/// <summary>
+/// Usado para visualização geral do usuário
+/// </summary>
 public class UserViewDTO : Entity
 {
 

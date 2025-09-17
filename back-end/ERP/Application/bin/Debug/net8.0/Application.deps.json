@@ -10,7 +10,8 @@
         "dependencies": {
           "AutoMapper": "15.0.1",
           "Domain": "1.0.0",
-          "Infrastructure": "1.0.0"
+          "Infrastructure": "1.0.0",
+          "Kernel": "1.0.0"
         },
         "runtime": {
           "Application.dll": {}
@@ -652,12 +653,21 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
+          "Kernel": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0"
         },
         "runtime": {
           "Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Kernel/1.0.0": {
+        "runtime": {
+          "Kernel.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1062,6 +1072,11 @@
       "sha512": ""
     },
     "Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kernel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

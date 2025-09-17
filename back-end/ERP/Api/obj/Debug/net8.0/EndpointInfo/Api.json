@@ -36,10 +36,28 @@
         }
       }
     },
-    "/api/Users": {
+    "/api/Companies": {
       "get": {
         "tags": [
-          "Usuários"
+          "Empresas"
+        ],
+        "parameters": [
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -47,26 +65,217 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/User"
-                  }
+                  "$ref": "#/components/schemas/CompanyViewDTOPagedResultResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/User"
-                  }
+                  "$ref": "#/components/schemas/CompanyViewDTOPagedResultResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/User"
-                  }
+                  "$ref": "#/components/schemas/CompanyViewDTOPagedResultResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Empresas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompanyCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompanyCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompanyCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Empresas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompanyCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompanyCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompanyCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Companies/{id}": {
+      "get": {
+        "tags": [
+          "Empresas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyViewDTOResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Empresas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users": {
+      "get": {
+        "tags": [
+          "Usuários"
+        ],
+        "parameters": [
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserViewDTOPagedResultResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserViewDTOPagedResultResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserViewDTOPagedResultResult"
                 }
               }
             }
@@ -230,6 +439,276 @@
   },
   "components": {
     "schemas": {
+      "Address": {
+        "required": [
+          "createdAt",
+          "createdBy",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "street": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "number": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "cityId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "city": {
+            "$ref": "#/components/schemas/City"
+          }
+        },
+        "additionalProperties": false
+      },
+      "City": {
+        "required": [
+          "createdAt",
+          "createdBy",
+          "name",
+          "state"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CompanyCreateDTO": {
+        "required": [
+          "cnpj",
+          "createdAt",
+          "createdBy",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "cnpj": {
+            "maxLength": 18,
+            "type": "string",
+            "nullable": true
+          },
+          "addressId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CompanyViewDTO": {
+        "required": [
+          "cnpj",
+          "createdAt",
+          "createdBy",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "cnpj": {
+            "maxLength": 18,
+            "type": "string",
+            "nullable": true
+          },
+          "addressId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CompanyViewDTOPagedResult": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CompanyViewDTO"
+            },
+            "nullable": true
+          },
+          "totalItems": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CompanyViewDTOPagedResultResult": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/CompanyViewDTOPagedResult"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CompanyViewDTOResult": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/CompanyViewDTO"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequestDTO": {
         "required": [
           "password",
@@ -378,6 +857,108 @@
               "format": "int32"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserViewDTO": {
+        "required": [
+          "createdAt",
+          "createdBy"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "companyId": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserViewDTOPagedResult": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserViewDTO"
+            },
+            "nullable": true
+          },
+          "totalItems": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserViewDTOPagedResultResult": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/UserViewDTOPagedResult"
           }
         },
         "additionalProperties": false

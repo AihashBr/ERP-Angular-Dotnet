@@ -1,5 +1,6 @@
-﻿namespace Application.DTOs.Result;
+﻿using Kernel.Utils.Pagination;
 
+namespace Application.DTOs.Result;
 
 /// <summary>
 /// Representa o resultado de uma operação genérica.

@@ -21,10 +21,13 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Registra as Services na injeção de dependência
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
 
 // Registra os repositórios na injeção de dependência
+builder.Services.AddScoped(typeof(IPaginationRepository<>), typeof(PaginationRepository<>));
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 
 // AutoMapper
 builder.Services.AddAutoMapper(map =>
@@ -56,7 +59,7 @@ app.UseExceptionHandler(appError =>
 
             var response = new
             {
-                StatusCode = context.Response.StatusCode,
+                context.Response.StatusCode,
                 Success = false,
                 Message = contextFeature.Error?.Message ?? "Ocorreu um erro."
             };

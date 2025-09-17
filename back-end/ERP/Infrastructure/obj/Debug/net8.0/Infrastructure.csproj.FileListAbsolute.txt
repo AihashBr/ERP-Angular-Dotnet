@@ -3,7 +3,9 @@ C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\bin\Debug\net8.0\Kernel.dll
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\bin\Debug\net8.0\Kernel.pdb
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache

@@ -153,9 +153,11 @@ C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Application.dll
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Domain.dll
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Kernel.dll
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Application.pdb
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Domain.pdb
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\bin\Debug\net8.0\Kernel.pdb
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\obj\Debug\net8.0\Api.csproj.AssemblyReference.cache
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\obj\Debug\net8.0\rpswa.dswa.cache.json
 C:\Users\Leandro\Documents\GitHub\ERP-Angular-Dotnet\back-end\ERP\Api\obj\Debug\net8.0\Api.GeneratedMSBuildEditorConfig.editorconfig

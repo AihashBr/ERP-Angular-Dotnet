@@ -10,6 +10,7 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
+          "Kernel": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
@@ -1080,6 +1081,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Kernel/1.0.0": {
+        "runtime": {
+          "Kernel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1664,6 +1673,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kernel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

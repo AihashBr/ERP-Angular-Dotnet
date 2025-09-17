@@ -1697,7 +1697,8 @@
         "dependencies": {
           "AutoMapper": "15.0.1",
           "Domain": "1.0.0",
-          "Infrastructure": "1.0.0"
+          "Infrastructure": "1.0.0",
+          "Kernel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}
@@ -1722,6 +1723,7 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
+          "Kernel": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0"
@@ -1731,6 +1733,16 @@
         },
         "runtime": {
           "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "Kernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Kernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kernel.dll": {}
         }
       }
     }
@@ -5018,6 +5030,11 @@
       "type": "project",
       "path": "../Infrastructure/Infrastructure.csproj",
       "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    },
+    "Kernel/1.0.0": {
+      "type": "project",
+      "path": "../Kernel/Kernel.csproj",
+      "msbuildProject": "../Kernel/Kernel.csproj"
     }
   },
   "projectFileDependencyGroups": {

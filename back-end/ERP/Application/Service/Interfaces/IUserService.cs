@@ -1,6 +1,7 @@
 ﻿using Application.DTOs.Result;
 using Application.DTOs.UserDTO;
 using Domain.Entities;
+using Kernel.Utils.Pagination;
 
 namespace Application.Service.Interfaces;
 
@@ -25,10 +26,11 @@ public interface IUserService
     Task<Result<UserViewDTO>> GetByIdAsync(int id);
 
     /// <summary>
-    /// Obtém todos os usuários cadastrados.
+    /// Obtém uma lista paginada de usuários cadastrados.
     /// </summary>
-    /// <returns>Lista de usuários.</returns>
-    Task<Result<List<UserViewDTO>>> GetAsync();
+    /// <param name="pagination">Parâmetros de paginação (número da página e tamanho da página).</param>
+    /// <returns>Resultado contendo a página de usuários.</returns>
+    Task<Result<PagedResult<UserViewDTO>>> GetAsync(PaginationParams pagination);
 
     /// <summary>
     /// Atualiza os dados de um usuário.
