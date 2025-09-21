@@ -25,7 +25,6 @@ public class CompanyRepository : ICompanyRepository
     public async Task<Company?> GetByIdAsync(int id)
     {
         return await _context.Companies
-            .Include(c => c.Address)
             .FirstOrDefaultAsync(c => c.Id == id);
     }
 
@@ -33,7 +32,7 @@ public class CompanyRepository : ICompanyRepository
         Expression<Func<Company, bool>>? filter = null,
         Func<IQueryable<Company>, IOrderedQueryable<Company>>? orderBy = null)
     {
-        IQueryable<Company> query = _context.Companies.Include(c => c.Address);
+        IQueryable<Company> query = _context.Companies;
 
         if (filter != null)
             query = query.Where(filter);

@@ -20,8 +20,33 @@ public class Company : Entity
     public required string Cnpj { get; set; }
 
     /// <summary>
-    /// Endereço da empresa
+    /// Rua
     /// </summary>
-    public int? AddressId { get; set; }
-    public Address? Address { get; set; }
+    [MaxLength(200)]
+    public string? Street { get; set; }
+
+    /// <summary>
+    /// Número
+    /// </summary>
+    [MaxLength(100)]
+    public string? Number { get; set; }
+
+    /// <summary>
+    /// Bairro
+    /// </summary>
+    [MaxLength(150)]
+    public string? District { get; set; }
+
+    /// <summary>
+    /// Complemento
+    /// </summary>
+    [MaxLength(250)]
+    public string? Complement { get; set; }
+
+    /// <summary>
+    /// Cidade Id
+    /// </summary>
+    public City? City { get; set; }
+    public int? CityId { get; set; }
+
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+391398c60d2f2cd6b4d32a72f526bdf6cb5e2aac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fe250fff1bad8984e49bf3eeea499e9d28bb2b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

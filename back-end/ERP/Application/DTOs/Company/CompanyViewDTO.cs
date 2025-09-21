@@ -24,5 +24,4 @@ public class CompanyViewDTO : Entity
     /// Endereço da empresa
     /// </summary>
     public int? AddressId { get; set; }
-    public Address? Address { get; set; }
 }

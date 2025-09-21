@@ -37,7 +37,32 @@ public class User : Entity
     public bool Active { get; set; }
 
     /// <summary>
-    /// IDs das empresas às quais o usuário pertence.
+    /// Rua
     /// </summary>
-    public required List<int> CompanyId { get; set; }
+    [MaxLength(200)]
+    public string? Street { get; set; }
+
+    /// <summary>
+    /// Número
+    /// </summary>
+    [MaxLength(100)]
+    public string? Number { get; set; }
+
+    /// <summary>
+    /// Bairro
+    /// </summary>
+    [MaxLength(150)]
+    public string? District { get; set; }
+
+    /// <summary>
+    /// Complemento
+    /// </summary>
+    [MaxLength(250)]
+    public string? Complement { get; set; }
+
+    /// <summary>
+    /// Cidade Id
+    /// </summary>
+    public City? City { get; set; }
+    public int? CityId { get; set; }
 }

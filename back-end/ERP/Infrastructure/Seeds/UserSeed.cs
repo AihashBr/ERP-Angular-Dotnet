@@ -28,7 +28,6 @@ namespace Infrastructure.Seeds
                 Email = "admin@erp.com",
                 Password = passwordHash,
                 Active = true,
-                CompanyId = [1],
                 CreatedAt = new DateTime(2025, 01, 01, 20, 0, 0),
                 CreatedBy = "system"
             };
