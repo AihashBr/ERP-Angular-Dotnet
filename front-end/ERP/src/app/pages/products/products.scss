@@ -1,0 +1,44 @@
+.data-import {
+  height: 100vh;
+  font-size: 0.875rem; // reduz o tamanho da fonte geral
+
+  .sidebar {
+    width: 200px;
+    background-color: #ffffff; // menu branco
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+
+    h5 {
+      font-size: 1rem; // título menor
+      margin-bottom: 1rem;
+    }
+
+    .nav-link {
+      font-size: 0.875rem; // links menores
+      cursor: pointer;
+      color: #333;
+      padding: 0.4rem 0.5rem;
+      border-radius: 0.25rem;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &.active {
+        font-weight: bold;
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  .content {
+    flex-grow: 1;
+    background-color: #f8f9fa; // fundo da área de conteúdo (como o menu atual)
+    padding: 1rem;
+    overflow-y: auto;
+
+    h5 {
+      font-size: 1rem; // títulos menores
+    }
+  }
+}

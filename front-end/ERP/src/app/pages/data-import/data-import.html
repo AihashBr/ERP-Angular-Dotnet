@@ -1,0 +1,104 @@
+<div class="data-import d-flex vh-100">
+
+  <!-- Menu lateral -->
+  <div class="sidebar bg-light d-flex flex-column p-3" style="width: 200px;">
+    <h5 class="mb-3">Importação de Dados</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a class="nav-link" [class.active]="selected === 'clients'" (click)="select('clients')">
+          Importar Clientes
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="nav-link" [class.active]="selected === 'assets'" (click)="select('assets')">
+          Importar Bens
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="nav-link" [class.active]="selected === 'products'" (click)="select('products')">
+          Importar Produtos
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content flex-grow-1 p-4">
+    <ng-container [ngSwitch]="selected">
+
+      <div *ngSwitchCase="'clients'">
+        <h5>Importar Clientes</h5>
+        <!-- Aviso -->
+        <div class="alert alert-warning">
+            Antes de importar clientes, certifique-se de que os bens já foram importados.
+        </div>
+
+        <!-- Campos adicionais para o sistema antigo -->
+        <div class="row g-3 mb-3">
+            <div class="col-md-6">
+            <label for="oldNumber" class="form-label">Fuso horário</label>
+            <input type="number" class="form-control" id="oldNumber"/>
+            </div>
+
+            <div class="col-md-6">
+            <label for="oldType" class="form-label">Booleano do sistema antigo</label>
+            <input type="text" class="form-control" id="oldType"/>
+            </div>
+        </div>
+
+        <!-- Botões de download e upload alinhados à direita -->
+        <div class="d-flex justify-content-end gap-3 mb-3">
+            <button class="btn btn-secondary">
+                <i class="bi bi-download"></i> Baixar layout
+            </button>
+
+            <label class="btn btn-primary mb-0">
+                <i class="bi bi-upload"></i> Enviar planilha
+                <input type="file" hidden />
+            </label>
+        </div>
+      </div>
+
+      <div *ngSwitchCase="'assets'">
+        <h5>Importar Bens</h5>
+        <!-- Formulário ou upload -->
+         
+        <!-- Campos adicionais para o sistema antigo -->
+        <div class="row g-3 mb-3">
+            <div class="col-md-6">
+            <label for="oldNumber" class="form-label">Fuso horário</label>
+            <input type="number" class="form-control" id="oldNumber"/>
+            </div>
+
+            <div class="col-md-6">
+            <label for="oldType" class="form-label">Booleano do sistema antigo</label>
+            <input type="text" class="form-control" id="oldType"/>
+            </div>
+        </div>
+
+        <!-- Botões de download e upload alinhados à direita -->
+        <div class="d-flex justify-content-end gap-3 mb-3">
+            <button class="btn btn-secondary">
+                <i class="bi bi-download"></i> Baixar layout
+            </button>
+
+            <label class="btn btn-primary mb-0">
+                <i class="bi bi-upload"></i> Enviar planilha
+                <input type="file" hidden />
+            </label>
+        </div>
+      </div>
+
+      <div *ngSwitchCase="'products'">
+        <h5>Importar Produtos</h5>
+        <!-- Formulário ou upload -->
+      </div>
+
+      <div *ngSwitchDefault>
+        <h5>Selecione uma opção do menu</h5>
+      </div>
+
+    </ng-container>
+  </div>
+
+</div>

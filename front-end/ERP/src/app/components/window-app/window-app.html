@@ -1,0 +1,26 @@
+<div
+  class="window card"
+  [ngClass]="{'fullscreen': window.fullscreen}"
+  [ngStyle]="{
+    width: window.fullscreen ? '100%' : window.width + 'px',
+    height: window.fullscreen ? '100%' : window.height + 'px',
+    top: window.fullscreen ? '0' : window.top + 'px',
+    left: window.fullscreen ? '0' : window.left + 'px',
+    zIndex: window.zIndex
+  }"
+  (mousedown)="onFocus()"
+>
+  <div class="card-header d-flex justify-content-between align-items-center" (mousedown)="startDrag($event)">
+    <span><i [class]="'bi ' + window.icon"></i> {{window.title}}</span>
+    <div>
+      <button class="btn btn-sm btn-light me-1" (click)="toggleFullscreen()">
+        <i class="bi" [class.bi-arrows-fullscreen]="!window.fullscreen" [class.bi-fullscreen-exit]="window.fullscreen"></i>
+      </button>
+      <button class="btn btn-sm btn-danger" (click)="closeWindow()">×</button>
+    </div>
+  </div>
+  <div class="card-body p-0">
+    <iframe [src]="safeUrl" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
+  <div class="resizer" (mousedown)="startResize($event)"></div>
+</div>

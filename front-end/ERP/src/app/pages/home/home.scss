@@ -1,0 +1,63 @@
+.desktop {
+  height: 100vh;
+  display: flex;
+  background-color: #f8f9fa; // fundo branco
+  color: #474747;
+}
+
+/* Sidebar esquerda */
+.sidebar {
+  width: 60px;
+  background-color: #ffffff; // branco
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #474747;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    color: #474747;
+    &:hover { color: #1e5bb6; } // hover azul
+  }
+}
+
+/* Área de trabalho */
+.workspace {
+  flex-grow: 1;
+  padding: 1rem;
+
+  .desktop-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .desktop-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #474747;
+
+      span {
+        margin-top: 0.1rem;
+        font-size: 0.9rem;
+      }
+
+      &:hover {
+        transition: 0.2s;
+        color: #125dcc;
+      }
+    }
+  }
+}

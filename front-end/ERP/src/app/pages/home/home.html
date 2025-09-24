@@ -1,1 +1,29 @@
-<p>home works!</p>
+<div class="desktop d-flex">
+
+  <!-- Barra lateral fixa -->
+  <div class="sidebar d-flex flex-column align-items-center py-2">
+    <div class="logo mb-3">ERP</div>
+    <div class="icon mt-auto mb-2" title="Configurações"><i class="bi bi-gear-fill"></i></div>
+  </div>
+
+  <!-- Área de trabalho -->
+  <div class="workspace flex-grow-1 p-3 position-relative">
+
+    <!-- Ícones da área de trabalho -->
+    <div class="desktop-icons d-flex flex-wrap gap-4 mb-4">
+      <div class="desktop-icon" *ngFor="let app of apps" (click)="openApp(app)">
+        <i [class]="'bi ' + app.icon"></i>
+        <span>{{app.name}}</span>
+      </div>
+    </div>
+
+    <!-- Janelas abertas -->
+    <app-window-app
+      *ngFor="let win of openWindows"
+      [window]="win"
+      (close)="closeWindow($event)"
+      (bringToFront)="bringToFront($event)">
+    </app-window-app>
+
+  </div>
+</div>
