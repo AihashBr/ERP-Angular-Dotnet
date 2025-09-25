@@ -8,7 +8,7 @@ import { LoginRequest } from '../interface/login/loginRequest';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:5000/api/Auth'; // ajuste a porta da sua API
+  private apiUrl = 'https://localhost:7170/api/Auth';
 
   constructor(private http: HttpClient) {}
 

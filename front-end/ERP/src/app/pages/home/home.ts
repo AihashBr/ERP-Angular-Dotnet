@@ -31,27 +31,6 @@ export class Home {
       height: 600,
     },
     { 
-      name: 'Vendas',
-      icon: 'bi-currency-dollar',
-      route: '/sales',
-      width: 1000,
-      height: 600,
-    },
-    { 
-      name: 'Relatórios',
-      icon: 'bi-graph-up',
-      route: '/reports',
-      width: 1000,
-      height: 600,
-    },
-    { 
-      name: 'Configurações',
-      icon: 'bi-gear-fill',
-      route: '/settings',
-      width: 1000,
-      height: 600,
-    },
-    { 
       name: 'Importação de Dados',
       icon: 'bi-file-earmark-arrow-up-fill',
       route: '/data-import',

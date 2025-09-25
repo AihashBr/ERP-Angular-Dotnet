@@ -73,6 +73,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.2, )"
             }
           },
           "imports": [
@@ -157,6 +161,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[15.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.2, )"
             }
           },
           "imports": [

@@ -18,11 +18,24 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     )
 );
 
+// Adicione CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularDev", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 // Registra as Services na injeção de dependência
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<ICustomerAssetService, CustomerAssetService>();
 
 // Registra os repositórios na injeção de dependência
 builder.Services.AddScoped(typeof(IPaginationRepository<>), typeof(PaginationRepository<>));
@@ -30,6 +43,8 @@ builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerAssetRepository, CustomerAssetRepository>();
 
 // AutoMapper
 builder.Services.AddAutoMapper(map =>
@@ -44,6 +59,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// Use CORS
+app.UseCors("AllowAngularDev");
 
 app.UseExceptionHandler(appError =>
 {

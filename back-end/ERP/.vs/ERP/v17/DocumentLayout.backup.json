@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|solutionrelative:api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\dtos\\customerasset\\customerassetviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\dtos\\customerasset\\customerassetviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\dtos\\customer\\customerviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\dtos\\customer\\customerviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\dtos\\customerasset\\customerassetcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\dtos\\customerasset\\customerassetcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\dtos\\customer\\customercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\dtos\\customer\\customercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\service\\customerassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\service\\customerassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\api\\controllers\\customerassetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|solutionrelative:api\\controllers\\customerassetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|solutionrelative:api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\api\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4720D642-CC38-4735-9729-2A2E4CA21CCC}|Api\\Api.csproj|solutionrelative:api\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\mappings\\productmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\mappings\\productmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\application\\mappings\\companymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DE23438-F27D-4AD1-87E2-CDF26F350D58}|Application\\Application.csproj|solutionrelative:application\\mappings\\companymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\infrastructure\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|c:\\users\\leandro\\documents\\github\\erp-angular-dotnet\\back-end\\erp\\infrastructure\\repository\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD6200B-A139-4FC6-BE03-723F5D84DF75}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,75 +47,106 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Api\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Title": "CustomerAssetViewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\CustomerAsset\\CustomerAssetViewDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\CustomerAsset\\CustomerAssetViewDTO.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\CustomerAsset\\CustomerAssetViewDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\CustomerAsset\\CustomerAssetViewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:33:00.858Z",
+              "WhenOpened": "2025-09-25T01:07:28.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CustomerViewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Customer\\CustomerViewDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Customer\\CustomerViewDTO.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Customer\\CustomerViewDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\Customer\\CustomerViewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T01:07:17.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Customer\\CustomerCreateDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Customer\\CustomerCreateDTO.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\Customer\\CustomerCreateDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\Customer\\CustomerCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T01:07:14.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerAssetCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\CustomerAsset\\CustomerAssetCreateDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\CustomerAsset\\CustomerAssetCreateDTO.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\DTOs\\CustomerAsset\\CustomerAssetCreateDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\CustomerAsset\\CustomerAssetCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T01:02:12.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerAssetService.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Service\\CustomerAssetService.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\CustomerAssetService.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Service\\CustomerAssetService.cs",
+              "RelativeToolTip": "Application\\Service\\CustomerAssetService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwE0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T01:02:01.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerAssetsController.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\CustomerAssetsController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\CustomerAssetsController.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\CustomerAssetsController.cs",
+              "RelativeToolTip": "Api\\Controllers\\CustomerAssetsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T01:01:30.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Api\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T01:00:12.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CompaniesController.cs",
               "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\CompaniesController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\CompaniesController.cs",
               "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Api\\Controllers\\CompaniesController.cs",
               "RelativeToolTip": "Api\\Controllers\\CompaniesController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:32:26.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductMap.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Mappings\\ProductMap.cs",
-              "RelativeDocumentMoniker": "Application\\Mappings\\ProductMap.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Mappings\\ProductMap.cs",
-              "RelativeToolTip": "Application\\Mappings\\ProductMap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:31:22.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CompanyMap.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Mappings\\CompanyMap.cs",
-              "RelativeDocumentMoniker": "Application\\Mappings\\CompanyMap.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Application\\Mappings\\CompanyMap.cs",
-              "RelativeToolTip": "Application\\Mappings\\CompanyMap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:30:52.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Repository\\Interfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repository\\Interfaces\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Repository\\Interfaces\\IProductRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repository\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:25:03.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Repository\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repository\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\GitHub\\ERP-Angular-Dotnet\\back-end\\ERP\\Infrastructure\\Repository\\ProductRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repository\\ProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:24:43.878Z"
+              "WhenOpened": "2025-09-25T00:59:34.564Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -64,5 +64,8 @@ public class User : Entity
     /// Cidade Id
     /// </summary>
     public City? City { get; set; }
+    /// <summary>
+    /// Id da cidade.
+    /// </summary>
     public int? CityId { get; set; }
 }
